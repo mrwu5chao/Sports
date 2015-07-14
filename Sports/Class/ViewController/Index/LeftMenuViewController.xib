@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LeftMenuViewController">
+            <connections>
+                <outlet property="_mainView" destination="yxb-g8-Y8e" id="fUb-pv-M7a"/>
+                <outlet property="_tableView" destination="EuQ-51-S1w" id="JXj-Ez-QJc"/>
+                <outlet property="_userCell" destination="yPC-2c-Gpy" id="Ba9-N1-BxT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yxb-g8-Y8e">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZCS-qD-ANU">
+                            <rect key="frame" x="23" y="522" width="85" height="25"/>
+                            <inset key="titleEdgeInsets" minX="14" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="设置" image="settings3-50.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="settingPresson:" destination="-1" eventType="touchUpInside" id="54N-YJ-ks6"/>
+                            </connections>
+                        </button>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="EuQ-51-S1w">
+                            <rect key="frame" x="0.0" y="74" width="320" height="429"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="tMv-EK-Rzx"/>
+                                <outlet property="delegate" destination="-1" id="MMu-jD-2Uj"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.12156862745098039" green="0.35686274509803922" blue="0.51372549019607838" alpha="1" colorSpace="calibratedRGB"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="-24" y="43"/>
+        </view>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="135" id="yPC-2c-Gpy">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yPC-2c-Gpy" id="LyN-5q-gYv">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="user_male_circle_filled-100.png" translatesAutoresizingMaskIntoConstraints="NO" id="gKy-WC-mQ3">
+                        <rect key="frame" x="16" y="8" width="62" height="62"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="super man" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bpg-rk-Up8">
+                        <rect key="frame" x="86" y="14" width="102" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="age:18" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TV9-fo-4hR">
+                        <rect key="frame" x="86" y="43" width="56" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="leftmale-100.png" translatesAutoresizingMaskIntoConstraints="NO" id="Nk5-fT-hcb">
+                        <rect key="frame" x="144" y="43" width="19" height="19"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="left_line.png" translatesAutoresizingMaskIntoConstraints="NO" id="rf3-FL-wZw">
+                        <rect key="frame" x="16" y="105" width="226" height="1"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="leftforward-100.png" translatesAutoresizingMaskIntoConstraints="NO" id="t0L-jp-Dg4">
+                        <rect key="frame" x="226" y="25" width="16" height="28"/>
+                    </imageView>
+                </subviews>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <point key="canvasLocation" x="-113" y="-342"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="left_line.png" width="226" height="1"/>
+        <image name="leftforward-100.png" width="16" height="29"/>
+        <image name="leftmale-100.png" width="19" height="19"/>
+        <image name="settings3-50.png" width="25" height="25"/>
+        <image name="user_male_circle_filled-100.png" width="62" height="62"/>
+    </resources>
+</document>
